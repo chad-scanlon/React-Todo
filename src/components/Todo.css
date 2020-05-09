@@ -44,14 +44,14 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-.add-form {
+.todo-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1%;
   width: 30%;
-  border: solid black 2px;
+
   margin-top: 20%;
 }
 .search-bar {
@@ -62,7 +62,6 @@ span {
   padding: 1%;
   text-align: center;
   margin-top: 2%;
-  border: solid black 2px;
 }
 .todo-list {
   text-align: center;
@@ -71,10 +70,19 @@ span {
   background: repeating-linear-gradient(180deg, rgb(224, 197, 19), #fff 20px);
 
   width: 30%;
+  height: 300px;
 }
 
 .todo.completed {
   background-color: #ecf0f3;
   text-decoration: line-through;
   font-style: italic;
+}
+
+.clear-button {
+  margin-top: 70%;
+}
+
+.add-form {
+  margin-bottom: 50%;
 }

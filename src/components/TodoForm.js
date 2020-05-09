@@ -25,7 +25,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <form className="add-form" onSubmit={this.submitTodo}>
+      <form className="todo-form" onSubmit={this.submitTodo}>
         <input
           type="text"
           name="todo"
@@ -33,10 +33,12 @@ class TodoForm extends React.Component {
           onChange={this.handleChanges}
         />
         <br />
-        <button>Add</button>
+        <div className="add-form">
+          <button>Add</button>
+        </div>
+
         <div className="search-bar">
           <label htmlFor="search">
-            Search
             <input
               type="text"
               name="search"
